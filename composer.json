@@ -1,0 +1,13 @@
+{
+    "name": "hexlet/code",
+    "description": "hexlet/code",
+    "type": "1",
+    "license": "1",
+    "authors": [
+        {
+            "name": "alulsh"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {}
+}
