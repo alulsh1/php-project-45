@@ -3,7 +3,9 @@
     "autoload": {
         "files": [
             "src/Cli.php",
-			"src/Games/Even.php"
+			"src/Games/Even.php",
+			"src/Games/Calc.php",
+			"src/Engine.php"
         ]
     },
     "description": "hexlet/code",
@@ -23,7 +25,8 @@
     },
 	"bin": [
   "bin/brain-games",
-  "bin/brain-even"
+  "bin/brain-even",
+  "bin/brain-calc"
 ]
 	
 }

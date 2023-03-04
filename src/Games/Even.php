@@ -2,7 +2,8 @@
 namespace BrainGames\Games\Even;
 use function cli\line;
 use function cli\prompt;
-use function BrainGames\Cli\helloPeople;
+use function BrainGames\Engine\runner;
+use const BrainGames\Engine\ROUND_COUNT;
 
 function isEven($num){
 	if ($num %2 === 0){
@@ -14,31 +15,16 @@ function isEven($num){
 }
 
 function test(){
-line('Welcome to the Brain Game!');
-$name = prompt('May I have your name?');
-line("Hello, %s!, {$name}");
-line("Answer \"yes\" if the number is even, otherwise answer \"no\".");
-$raund = 3;
+$description = "Answer \"yes\" if the number is even, otherwise answer \"no\".";
+$arrWork = [];
 
-for ($i=0; $i<$raund; $i++){
-
-	$answe = fn($key) => $answeConst[$key];
+for ($i=0; $i<ROUND_COUNT; $i++){
 
 	$randomNuber = rand(0, 100);	
 	
-	line("Question:' {$randomNuber}");
-	
-	$answer = prompt('Your answer:' .$randomNuber);
-	
 	$statusRandomNumber = isEven($randomNuber);
-	
-	if($statusRandomNumber === $answer){
-		line("Correct!");
-	}else{
-		line("'{$answer}' is wrong answer ;(. Correct answer was '{$statusRandomNumber}'. \n Let's try again, {$name}!");
-		return;	
-	}
+	$arrWork[$i]['question'] = $randomNuber;
+	$arrWork[$i]['result'] = $statusRandomNumber;	
 }
-		return line("Congratulations, {$name}!");
-
+	runner($description, $arrWork);
 }
