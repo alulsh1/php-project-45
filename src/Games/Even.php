@@ -1,7 +1,5 @@
 <?php
 namespace BrainGames\Games\Even;
-use function cli\line;
-use function cli\prompt;
 use function BrainGames\Engine\runner;
 use const BrainGames\Engine\ROUND_COUNT;
 

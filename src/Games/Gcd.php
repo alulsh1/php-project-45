@@ -1,7 +1,5 @@
 <?php
 namespace BrainGames\Games\Gcd;
-use function cli\line;
-use function cli\prompt;
 use const BrainGames\Engine\ROUND_COUNT;
 use function BrainGames\Engine\runner;
 
