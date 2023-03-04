@@ -22,7 +22,7 @@ if($answer == $item['result']){
 	line("Correct!");
 }
 else{
-	line("'{$answer}' is wrong answer ;(. Correct answer was '{$item['result']}'. \n Let's try again, Sam!");
+	line("'{$answer}' is wrong answer ;(. Correct answer was '{$item['result']}'. \n Let's try again, {$name}!");
 	return;
 	}
 }
