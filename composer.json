@@ -2,7 +2,8 @@
     "name": "hexlet/code",
     "autoload": {
         "files": [
-            "src/Cli.php"
+            "src/Cli.php",
+			"src/Games/Even.php"
         ]
     },
     "description": "hexlet/code",
@@ -21,7 +22,8 @@
         "squizlabs/php_codesniffer": "3.*"
     },
 	"bin": [
-  "bin/brain-games"
+  "bin/brain-games",
+  "bin/brain-even"
 ]
 	
 }
