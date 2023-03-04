@@ -16,7 +16,7 @@ line($description);
 foreach($arrWork as $item){
 
 line("Question: {$item['question']}");
-$answer = prompt('Your answer:');
+$answer = prompt('Your answer');
 
 if($answer == $item['result']){
 	line("Correct!");
