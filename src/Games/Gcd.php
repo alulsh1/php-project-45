@@ -6,7 +6,7 @@ use function BrainGames\Engine\runner;
 
 use const BrainGames\Engine\ROUND_COUNT;
 
-function nod($num1, $num2)
+function nod(int $num1, int $num2): int
 {
     while ($num1 !== 0 && $num2 !== 0) {
         if ($num1 > $num2) {
