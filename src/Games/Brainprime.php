@@ -19,7 +19,7 @@ function isPrime(int $num)
 function run()
 {
     $description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-
+    $arrWork = [];
     for ($i = 0; $i < ROUND_COUNT; $i++) {
         $chislo = rand(3, 50);
 

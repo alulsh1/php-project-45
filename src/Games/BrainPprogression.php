@@ -24,7 +24,7 @@ function progression()
 function run()
 {
     $description = 'What number is missing in the progression?';
-
+    $arrWork = [];
     for ($i = 0; $i < 3; $i++) {
         $arr = progression();
 
