@@ -6,7 +6,7 @@ use function BrainGames\Engine\runner;
 
 use const BrainGames\Engine\ROUND_COUNT;
 
-function isEven($num)
+function isEven(int $num)
 {
     if ($num % 2 === 0) {
         return 'yes';
