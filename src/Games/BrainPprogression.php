@@ -1,7 +1,10 @@
 <?php
+
 namespace BrainGames\Games\BrainPprogression;
-use function BrainGames \Engine \runner;
-use const BrainGames \Engine \ROUND_COUNT;
+
+use function BrainGames\Engine\runner;
+
+use const BrainGames\Engine\ROUND_COUNT;
 
 function progression()
 {
