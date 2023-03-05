@@ -6,10 +6,9 @@ use function BrainGames\Engine\runner;
 
 use const BrainGames\Engine\ROUND_COUNT;
 
-function isPrime($num)
+function isPrime(int $num)
 {
-    $koren = round(sqrt($num));
-    for ($i = 2; $i < $koren; $i++) {
+    for ($i = 2; $i < $num / 2; $i++) {
         if ($num % $i == 0) {
             return 'no';
         }
